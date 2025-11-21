@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Q3 Financial Earnings Report | Interactive Presentation</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/blood.css" id="theme">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <section>
+                <h1>Q3 Earnings Report</h1>
+                <h3>Driving Growth Through Digital Transformation</h3>
+                <p>Technical Consultant: J. Doe</p>
+                <p>Contact: **24f2008074@ds.study.iitm.ac.in**</p>
+                <aside class="notes">
+                    Welcome stakeholders! This presentation highlights our Q3 performance and the technology initiatives driving our future. Use the speaker notes key (S) for guidance.
+                </aside>
+            </section>
+
+            <section data-markdown>
+                <textarea data-template>
+                    ## 📊 Key Q3 Highlights
+
+                    * **Revenue Growth:** $1.2B (up 15% YoY)
+                    * **Client Acquisition:** 50,000 new accounts
+                    * **Tech Investment:** $20M allocated to AI/ML projects
+
+                    ---
+
+                    ### Next Steps
+                    We will continue to focus on **cybersecurity** and **cloud migration** to optimize our operations and service delivery.
+                </textarea>
+                <aside class="notes">
+                    This slide, written entirely in Markdown, shows our commitment to using modern, efficient documentation standards internally.
+                </aside>
+            </section>
+
+            <section>
+                <h2>🚀 Strategic Pillars and Execution</h2>
+                <ul>
+                    <li class="fragment fade-in">**Pillar 1:** Cloud-Native Infrastructure</li>
+                    <li class="fragment fade-in">**Pillar 2:** Personalized Customer Experience</li>
+                    <li class="fragment highlight-red">**Pillar 3:** Data-Driven Decision Making (Crucial for Q4)</li>
+                    <li class="fragment grow">**Pillar 4:** Regulatory Compliance Automation</li>
+                </ul>
+                <aside class="notes">
+                    Pillar 3 is our focus area. Click to reveal each pillar, emphasizing data's role with a red highlight, and making Pillar 4 stand out with a growth animation.
+                </aside>
+            </section>
+
+            <section>
+                <h2>Python Script for ETL Process</h2>
+                <pre><code data-trim data-line-numbers="1,3-5">
+import pandas as pd
+from sqlalchemy import create_engine
+
+# Database connection string
+engine = create_engine('postgresql://user:pass@host:port/db')
+
+# Load data into a DataFrame
+df = pd.read_sql('SELECT * FROM transactions WHERE date >= CURRENT_DATE - INTERVAL '90 days'', engine)
+
+print(f"Loaded {len(df)} Q3 records.")
+                </code></pre>
+                <aside class="notes">
+                    This snippet demonstrates the clean, modern Python code used in our Extract, Transform, Load (ETL) pipeline to quickly process quarterly transaction data. Line numbers are highlighted for focus.
+                </aside>
+            </section>
+
+            <section>
+                <h2>💰 Financial Model: Capital Asset Pricing Model (CAPM)</h2>
+                <p>The CAPM is used to determine the theoretically appropriate required rate of return of an asset.</p>
+                $$E(R_i) = R_f + \beta_i (E(R_m) - R_f)$$
+                <ul>
+                    <li>$E(R_i)$: Expected return on the security</li>
+                    <li>$R_f$: Risk-free rate</li>
+                    <li>$\beta_i$: Beta (systematic risk)</li>
+                    <li>$E(R_m)$: Expected return of the market</li>
+                </ul>
+                <aside class="notes">
+                    This equation, rendered using KaTeX, shows the core financial principle we use in evaluating our portfolio investments and risk-adjusted returns.
+                </aside>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
+    <script>
+        // Full list of configuration options available here:
+        // https://revealjs.com/config/
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+            // MathJax/KaTeX configuration
+            math: {
+                katex: 'https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js',
+                katexcss: 'https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css'
+            },
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+        });
+    </script>
+</body>
+</html>
